@@ -19,11 +19,11 @@ public class App
         System.out.println(obj.profile());
 
         System.out.println("Do You Want To Update GPA: yes/no");
-        String update_gpa= sc.next();
+        String updategpa= sc.next();
         if(update_gpa.equalsIgnoreCase("yes")){
             System.out.println("Enter New GPA:");
-            Float new_gpa =sc.nextFloat();
-            obj.update(new_gpa);
+            Float newgpa =sc.nextFloat();
+            obj.update(newgpa);
             System.out.println(obj.profile());
         
         }
