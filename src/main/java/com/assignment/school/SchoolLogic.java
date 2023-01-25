@@ -11,12 +11,12 @@ public class SchoolLogic {
         this.gpa=gpa;
     }
 
-    void update(float new_gpa){
-        gpa=new_gpa;
+    void update(float newgpa){
+        gpa=newgpa;
     }
 
     String profile(){
-        String name_gpa= name +" has a "+gpa +" GPA";
-        return name_gpa;
+        String namegpa= name +" has a "+gpa +" GPA";
+        return namegpa;
     }
 }
