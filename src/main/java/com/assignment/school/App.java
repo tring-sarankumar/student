@@ -20,7 +20,7 @@ public class App
 
         System.out.println("Do You Want To Update GPA: yes/no");
         String updategpa= sc.next();
-        if(update_gpa.equalsIgnoreCase("yes")){
+        if(updategpa.equalsIgnoreCase("yes")){
             System.out.println("Enter New GPA:");
             Float newgpa =sc.nextFloat();
             obj.update(newgpa);
