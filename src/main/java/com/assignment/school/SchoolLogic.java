@@ -16,7 +16,6 @@ public class SchoolLogic {
     }
 
     String profile(){
-        String namegpa= name +" has a "+gpa +" GPA";
-        return namegpa;
+        return name +" has a "+gpa +" GPA";
     }
 }
