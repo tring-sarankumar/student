@@ -3,8 +3,9 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 public class Student 
 {
-    public static void main(String []args) {
+    public static void main(String args[]) {
     	Logger log =  Logger.getLogger("CreditCard");
+    	
 
 
         Scanner sc = new Scanner(System.in);
@@ -19,7 +20,8 @@ public class Student
         float gpa=sc.nextFloat();
         
         StudentLogic obj = new StudentLogic(name, grade, gpa);
-        log.info(obj.profile());
+        String prof=obj.profile();
+        log.info(prof);
         
         log.info("Do You Want To Update GPA: yes/no");
         String updategpa= sc.next();
@@ -28,7 +30,7 @@ public class Student
             log.info("Enter New GPA:");
             Float newgpa =sc.nextFloat();
             obj.update(newgpa);
-            log.info(obj.profile());}
+            log.info("Successfully Updated");}
         }catch (Exception e) {
         	log.info("There Was an Exception :"+e);
         }
