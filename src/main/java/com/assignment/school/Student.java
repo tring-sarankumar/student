@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 public class Student 
 {
-    public static void main(String args[]) {
+    public static void main(String []args) {
     	Logger log =  Logger.getLogger("CreditCard");
 
 
@@ -22,12 +22,12 @@ public class Student
         log.info(obj.profile());
         
         log.info("Do You Want To Update GPA: yes/no");
-        String update_gpa= sc.next();
+        String updategpa= sc.next();
         
-        if(update_gpa.equalsIgnoreCase("yes")){
+        if(updategpa.equalsIgnoreCase("yes")){
             log.info("Enter New GPA:");
-            Float new_gpa =sc.nextFloat();
-            obj.update(new_gpa);
+            Float newgpa =sc.nextFloat();
+            obj.update(newgpa);
             log.info(obj.profile());}
         }catch (Exception e) {
         	log.info("There Was an Exception :"+e);
